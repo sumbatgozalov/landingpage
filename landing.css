@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+body {
+  background: url(./images/bg-tablet-pattern.svg) no-repeat top -25%right -50%,
+    url(./images/bg-tablet-pattern.svg) no-repeat bottom 25% left -75%;
+}
+.main {
+  width: 80%;
+  margin: 5% auto;
+}
+.header {
+  width: 80%;
+  margin: 1% auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2% auto;
+  padding: 10px 0;
+}
+
+.imagetop {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+  color: hsl(228, 39%, 23%);
+}
+.nav span {
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  gap: 50px;
+}
+
+.heroleft,
+.heroright {
+  flex: 1;
+}
+
+.heroleft h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: hsl(228, 39%, 23%);
+}
+.h2text {
+  color: hsl(228, 39%, 23%);
+  font-size: 1.1rem;
+}
+.heroleft h4 {
+  margin: 4% 0;
+  font-size: 1rem;
+  margin-right: 35%;
+  color: hsl(227, 12%, 61%);
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.secmain {
+  display: flex;
+  gap: 100px;
+}
+
+.mainleft,
+.mainright {
+  flex: 1;
+}
+.mainleft h1 {
+  font-size: 2.5rem;
+  color: hsl(228, 39%, 23%);
+  margin-bottom: 20px;
+}
+.mainleft p {
+  font-size: 1rem;
+  color: hsl(227, 12%, 61%);
+  margin-right: 35%;
+  text-align: left;
+}
+
+.spannum {
+  background-color: hsl(12, 88%, 59%);
+  padding: 10px 25px;
+  font-size: 14px;
+  border-radius: 20px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: hsl(0, 0%, 98%);
+}
+
+.main1,
+.main2,
+.main3 {
+  display: flex;
+  gap: 20px;
+  justify-content: baseline;
+  flex-direction: column;
+}
+.maintext {
+  display: flex;
+  gap: 20px;
+  text-align: left;
+  align-items: center;
+  background-color: hsl(13, 100%, 96%);
+  border-radius: 15px;
+}
+.textp {
+  margin-left: 90px;
+  margin-bottom: 20px;
+  color: hsl(227, 12%, 61%);
+}
+
+button {
+  background-color: hsl(12, 88%, 59%);
+  color: hsl(0, 0%, 98%);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 35px;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0px 11px 24px -4px rgba(255, 141, 0, 0.48);
+  -webkit-box-shadow: 0px 11px 24px -4px rgba(255, 141, 0, 0.48);
+  -moz-box-shadow: 0px 11px 24px -4px rgba(255, 141, 0, 0.48);
+}
+
+h2 {
+  font-size: 16px;
+}
+.bottom {
+  width: 80%;
+  margin: 0 auto;
+}
+.bottomcartsc {
+  overflow-x: scroll;
+  padding-top: 55px;
+}
+.bottomcards {
+  display: inline-flex;
+  width: 100%;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 0%, 98%);
+  flex: 0 0 30%;
+  padding: 10px;
+  border-radius: 15px;
+}
+.image img {
+  width: 60px;
+  height: 60px;
+  top: -30px;
+  position: relative;
+}
+
+.bottomh1 {
+  font-size: 2.5rem;
+  margin: 7% auto;
+  width: 80%;
+  text-align: center;
+  color: hsl(228, 39%, 23%);
+}
+.name {
+  display: flex;
+  flex-direction: column;
+}
+.image,
+.name h3 {
+  justify-content: center;
+}
+.name h3 {
+  margin-bottom: 18px;
+  font-size: 16px;
+  color: hsl(228, 39%, 23%);
+}
+.cardtext {
+  color: hsl(227, 12%, 61%);
+  font-size: 11px;
+  text-align: center;
+}
+.secdiv {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+.divpbtn,
+.divbottex {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+}
+.divbottex {
+  font-size: 37px;
+  color: white;
+  padding: 20px 0;
+  max-width: 50%;
+  justify-content: left;
+}
+
+.divpbtn {
+  flex: 1;
+  justify-content: right;
+}
+
+.secfooter {
+  margin: 0 auto;
+  background: url(/images/bg-simplify-section-desktop.svg) no-repeat top 50%
+    right -20%;
+  background-color: hsl(12, 88%, 59%);
+  background-size: 90%;
+}
+
+.bottombtn {
+  margin: 3% auto;
+  text-align: center;
+  align-items: center;
+}
+
+.pbtn {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(12, 88%, 59%);
+}
+
+.footer {
+  background-color: hsl(228, 39%, 23%);
+}
+
+.mainlogo img {
+  background-color: white;
+}
+
+.footersection {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+}
+
+.logos,
+.twocontent,
+.content3 {
+  flex: 1;
+}
+.twocontent {
+  display: flex;
+  justify-content: space-between;
+  color: hsl(0, 0%, 98%);
+}
+.content,
+.content2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content3 {
+  font-size: 10px;
+  text-align: right;
+}
+#errorText {
+  margin-top: 10px;
+  text-align: center;
+}
+.logos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.twocontent span:hover {
+  color: hsl(12, 88%, 59%);
+  cursor: pointer;
+}
+.alllogo img:hover {
+  background-color: hsl(12, 88%, 59%);
+}
+.alllogo {
+  display: flex;
+  gap: 15px;
+}
+
+.goandinp input {
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  padding: 10px;
+  margin-right: 10px;
+  color: hsl(12, 88%, 59%);
+  overflow: hidden;
+  width: 60%;
+}
+
+.goandinp button {
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+}
+.goandinp button:hover {
+  opacity: 0.8;
+}
+.goandinp div {
+  font-size: 13px;
+}
+.Pdiv {
+  font-size: 12px;
+  color: hsl(0, 0%, 98%);
+  position: relative;
+  top: 60%;
+}
+.Pdivresponsive {
+  display: none;
+  font-size: 12px;
+  color: hsl(0, 0%, 98%);
+}
+@media all and (max-width: 768px) {
+  .goandinp input {
+    width: 40%;
+  }
+}
+@media all and (max-width: 600px) {
+  .header {
+    display: none;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .heroleft {
+    text-align: center;
+  }
+  .heroleft h1 {
+    font-size: 35px;
+    margin: 6% 0;
+  }
+  .heroleft h4 {
+    margin: 6% 0;
+  }
+  .mainleft h1 {
+    text-align: center;
+    font-size: 35px;
+    margin: 6% 0;
+  }
+  .mainleft p {
+    text-align: center;
+    margin: 7% 0;
+    font-size: 15px;
+  }
+  .h2text {
+    font-size: 13px;
+  }
+  .textp {
+    margin: 0 0 10px 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+  }
+  .bottomh1 {
+    font-size: 30px;
+  }
+
+  .cardtext {
+    font-size: 10px;
+  }
+  .secfooter {
+    padding: 35px 0;
+    background-size: cover;
+  }
+  .secmain {
+    flex-direction: column;
+    gap: 35px;
+  }
+  .secdiv {
+    flex-direction: column;
+  }
+  .divbottex {
+    font-size: 30px;
+    align-self: center;
+    text-align: center;
+  }
+  .divpbtn {
+    justify-content: center;
+  }
+
+  .footersection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logos {
+    display: flex;
+    flex-direction: column-reverse;
+    order: 3;
+    align-items: center;
+    gap: 20px;
+  }
+  .Pdiv {
+    display: none;
+  }
+  .Pdivresponsive {
+    display: block;
+    font-size: 12px;
+    color: hsl(0, 0%, 98%);
+    order: 5;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .twocontent {
+    order: 1;
+    justify-content: space-between;
+    text-align: left;
+    margin: 5% 10%;
+    line-height: 2;
+  }
+  .content3 {
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .goandinp {
+    display: flex;
+    justify-content: space-between;
+  }
+  .goandinp input {
+    width: 80%;
+    padding: 15px 30px;
+  }
+
+  .alllogo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10% 0;
+  }
+  .alllogo img {
+    scale: 2;
+  }
+
+  .bottom {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .bottomcartsc {
+  overflow-x: hidden;
+    padding-top: 55px;
+  }
+  .bottomcards {
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .card {
+    flex: 0 0 95%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 1px solid orange;
+  }
+
+  .dot.active {
+    background-color: orange;
+  }
+}
