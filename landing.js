@@ -46,6 +46,6 @@ function changeCard(index) {
 // }
 
 const toggleButton = document.getElementsByClassName('toggle-btn')[0]
-const navbarItems = document.getElementsByClassName('navitem')[0]
+const navbarItems = document.getElementsByClassName('navitems')[0]
 
-toggleButton.addEventListener('click',()=>navbarItems.classList.toggle('active'))
+toggleButton.addEventListener('click',()=>{navbarItems.classList.toggle('active')})
