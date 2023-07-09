@@ -6,17 +6,29 @@
     <link rel="stylesheet" href="./landing.css" />
     <title>Manage landing page</title>
   </head>
-  <body>
+  <body class="contentmain">
     <header class="header">
-      <div class="imagetop"><img src="./images/logo.svg" alt="" /></div>
+      <div class="imagetop">
+        <img src="./images/logo.svg" alt="" />
+        <a href="#"
+          class="toggle-btn" >
+       
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <!-- <img class="closeIcon" src="./images/icon-close.svg" alt=""> -->
+        </a>
+      </div>
+
       <nav class="nav">
-        <span>Pricing </span>
-        <span>Product</span>
-        <span>About Us</span>
-        <span>Careers</span>
-        <span>Community</span>
+        
+        <span class="navitem">Pricing </span>
+        <span class="navitem">Product</span>
+        <span class="navitem">About Us</span>
+        <span class="navitem">Careers</span>
+        <span class="navitem">Community</span>
+        <button class="firstbtn">Get Started</button>
       </nav>
-      <button class="firstbtn">Get Started</button>
     </header>
     <main class="main">
       <section class="hero">
@@ -29,7 +41,11 @@
           <button>Get Started</button>
         </div>
         <div class="heroright">
-          <img class="responsive" src="./images/illustration-intro.svg" alt="" />
+          <img
+            class="responsive"
+            src="./images/illustration-intro.svg"
+            alt=""
+          />
         </div>
       </section>
       <section class="secmain">
@@ -139,14 +155,15 @@
           </div>
         </div>
       </div>
-      <div class="dots-container" >
+      <div class="dots-container">
         <span class="dot active" onclick="changeCard(0)"></span>
         <span class="dot" onclick="changeCard(1)"></span>
         <span class="dot" onclick="changeCard(2)"></span>
         <span class="dot" onclick="changeCard(3)"></span>
       </div>
+      <div class="bottombtn"><button>Get Started</button></div>
     </section>
-    <div class="bottombtn"><button>Get Started</button></div>
+
     <section class="secfooter">
       <div class="secdiv">
         <div class="divbottex">Simplify how your team works today.</div>
@@ -187,12 +204,8 @@
               type="email"
             />
             <button id="submit" class="gobtn">Go</button>
-           
           </div>
-          <p
-          id="errorText"
-          style="color: hsl(12, 88%, 59%); display: none"
-        ></p>
+          <p id="errorText" style="color: hsl(12, 88%, 59%); display: none"></p>
 
           <div class="Pdiv">Copyright 2020. All Rights Reserved</div>
         </div>

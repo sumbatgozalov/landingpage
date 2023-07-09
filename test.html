@@ -7,12 +7,12 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="slider-container">
+    <!-- <div class="slider-container">
       <div class="slider">
-        <div class="card active"><!-- Card content for card 1 -->1</div>
-        <div class="card"><!-- Card content for card 2 -->2</div>
-        <div class="card"><!-- Card content for card 3 -->3</div>
-        <div class="card"><!-- Card content for card 4 -->4</div>
+        <div class="card active"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
       </div>
       <div class="dots-container">
         <span class="dot active" onclick="changeCard(0)"></span>
@@ -20,68 +20,124 @@
         <span class="dot" onclick="changeCard(2)"></span>
         <span class="dot" onclick="changeCard(3)"></span>
       </div>
-    </div>
-    <script>
-      const cards = document.querySelectorAll(".card");
-      const dots = document.querySelectorAll(".dot");
-
-      function changeCard(index) {
-        cards.forEach((card, i) => {
-          if (i === index) {
-            card.style.display = "block";
-          } else {
-            card.style.display = "none";
-          }
-        });
-
-        dots.forEach((dot, i) => {
-          dot.classList.toggle("active", i === index);
-        });
-      }
-    </script>
+    </div> -->
+   
+    <nav class="navbar">
+      <div class="hamburger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <div class="close" onclick="toggleMenu()">&times;</div>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  
     <style>
-      .slider-container {
-        /* position: relative; */
-        width: 50%;
-        border: 1px solid green;
-        margin: 0 auto;
-      }
+  .navbar {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: lightgray;
+}
 
-      .slider {
-        /* display: flex; */
-        /* overflow: hidden; */
-        /* width: 100%; */
-      }
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
 
-      .card {
-        flex: 0 0 100%;
-        transition: transform 0.3s ease-in-out;
-        width: 50px;
-        height: 50px;
-        border: 1px solid red;
-        text-align: center;
-        margin: 0 auto;
-      }
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 3px 0;
+}
 
-      /* .dots-container {
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-      }
+.close {
+  display: none;
+  cursor: pointer;
+}
 
-      .dot {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: white;
-        margin: 0 5px;
-        cursor: pointer;
-        border: 1px solid orange;
-      }
+.menu {
+  display: none;
+  list-style-type: none;
+}
 
-      .dot.active {
-        background-color: orange;
-      } */
+.menu li {
+  margin-bottom: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .navbar.open .hamburger {
+    display: none;
+  }
+
+  .navbar.open .close {
+    display: block;
+  }
+
+  .navbar.open .menu {
+    display: block;
+  }
+}
+
+
+
+
+  
+
+
     </style>
+     <script>
+      function toggleMenu() {
+  const navbar = document.querySelector('.navbar');
+  const menu = document.querySelector('.menu');
+  navbar.classList.toggle('open');
+  menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+}
+
+     
+
+      
+            // const cards = document.querySelectorAll(".card");
+            // const dots = document.querySelectorAll(".dot");
+      
+            // function changeCard(index) {
+            //   cards.forEach((card, i) => {
+            //     if (i === index) {
+            //       card.style.display = "block";
+            //     } else {
+            //       card.style.display = "none";
+            //     }
+            //   });
+      
+            //   dots.forEach((dot, i) => {
+            //     dot.classList.toggle("active", i === index);
+            //   });
+            // }
+          </script>
   </body>
 </html>

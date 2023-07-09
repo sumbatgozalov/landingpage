@@ -26,17 +26,41 @@ body {
 .imagetop {
   display: flex;
   align-items: center;
+  flex: 1;
 }
 
 .nav {
   display: flex;
-  gap: 30px;
+  flex: 5;
   color: hsl(228, 39%, 23%);
+  align-items: center;
+  justify-content: space-around;
 }
-.nav span {
+.nav {
   font-size: 13px;
   font-weight: 700;
   cursor: pointer;
+}
+.imagetop {
+  align-items: center;
+}
+.toggle-btn {
+  position: absolute;
+  right: 2rem;
+  /* display: none; */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-btn .bar {
+  height: 3px;
+  width: 100%;
+  background-color: hsl(228, 39%, 23%);
+  border-radius: 10px;
+}
+.closeIcon {
+  display: none;
 }
 
 .hero {
@@ -331,14 +355,45 @@ h2 {
   font-size: 12px;
   color: hsl(0, 0%, 98%);
 }
+
+/* .contentmain{
+  filter: blur(5px);
+} */
+
 @media all and (max-width: 768px) {
   .goandinp input {
     width: 40%;
   }
 }
 @media all and (max-width: 600px) {
-  .header {
+  .nav button {
     display: none;
+  }
+  /* .blur-effect {
+    filter: none;
+  } */
+  .nav {
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px 20%;
+    border: 1px solid white;
+    background-color: white;
+    margin-top: 120px;
+    
+  }
+  .nav span {
+    font-size: 20px;
+    padding: 25px;
+    display: none;
+  }
+  .nav.active{
+    display: flex;
+  }
+  .toggle-btn {
+    display: flex;
   }
   .hero {
     display: flex;
@@ -421,7 +476,7 @@ h2 {
     color: hsl(0, 0%, 98%);
     order: 5;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 60px;
   }
   .twocontent {
     order: 1;
@@ -458,7 +513,7 @@ h2 {
     margin: 0 auto;
   }
   .bottomcartsc {
-  overflow-x: hidden;
+    overflow-x: hidden;
     padding-top: 55px;
   }
   .bottomcards {

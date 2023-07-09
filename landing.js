@@ -39,3 +39,13 @@ function changeCard(index) {
     dot.classList.toggle("active", i === index);
   });
 }
+
+// function toggleMenu() {
+//   const content = document.querySelector('.contentmain');
+//   content.classList.toggle('blur-effect');
+// }
+
+const toggleButton = document.getElementsByClassName('toggle-btn')[0]
+const navbarItems = document.getElementsByClassName('navitem')[0]
+
+toggleButton.addEventListener('click',()=>navbarItems.classList.toggle('active'))
